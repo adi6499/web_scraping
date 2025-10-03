@@ -38,7 +38,7 @@
             height: 98%;
             position: relative;
             display: grid;
-            place-content: start;
+            
             justify-items: center;
             padding: 1vmin;
             overflow-y: scroll;
@@ -64,12 +64,12 @@
             width:48%;
             height:36%;
             border:1px solid yellow;
-            position: absolute;
+            
             left: 25%;
         }
         .head{
             font-size: 4vmin;
-            position:absolute;
+            
             top:43%;
             font-weight: bold;
             color:rgba(10, 10, 10, 0.74);
@@ -78,7 +78,7 @@
         .info{
             width: 90%;
             top:55%;
-            position: absolute;
+            
             line-height: 7vmin;
             overflow: scroll;
             font-size: 3.5vmin;
