@@ -51,6 +51,7 @@
             height: 15vmin;
             height: 90vh;
             margin-bottom: 5vmin;
+            position: relative;
             top: 0%;
             overflow: hidden;
             box-shadow: 5px 5px 0px black,
@@ -128,5 +129,4 @@
             .price{
                 font-size: 3vmin;
             }
-
         }
