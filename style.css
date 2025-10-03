@@ -1,0 +1,132 @@
+ * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .contain {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            ;
+        }
+
+        .range {
+            width: 60%;
+            height: 7vmin;
+            right: 15%;
+            position: absolute;
+            z-index: 4;
+            display: flex;
+            place-items: center;
+            ;
+            bottom: 2%;
+            justify-content: space-around;
+
+        }
+
+        .range>button {
+            width: 18vmin;
+            padding: 1vmin;
+            border-radius: 1vmin;
+        }
+
+        .show {
+            width: 95%;
+            height: 98%;
+            position: relative;
+            display: grid;
+            place-content: start;
+            justify-items: center;
+            padding: 1vmin;
+            overflow-y: scroll;
+        }
+
+  
+        .card {
+            width:90vw;
+            padding: 5vmin;
+            height: 15vmin;
+            height: 90vh;
+            margin-bottom: 5vmin;
+            position: sticky;
+            top: 0%;
+            overflow: hidden;
+            box-shadow: 5px 5px 0px black,
+            0px 0px 3px black ;
+            border-radius: 5vmin;
+            border:1px solid black;
+            background:white;
+        }
+        .card > img{
+            width:48%;
+            height:36%;
+            border:1px solid yellow;
+            position: absolute;
+            left: 25%;
+        }
+        .head{
+            font-size: 4vmin;
+            position:absolute;
+            top:43%;
+            font-weight: bold;
+            color:rgba(10, 10, 10, 0.74);
+            text-transform: uppercase;
+        }
+        .info{
+            width: 90%;
+            top:55%;
+            position: absolute;
+            line-height: 7vmin;
+            overflow: scroll;
+            font-size: 3.5vmin;
+            text-align: justify;
+            color: rgba(75, 74, 74, 0.63);
+            font-weight: 550;
+        }
+        .price{
+            width:90%;
+            height:10vmin;;
+            border-radius:5vmin;
+            position: absolute;
+            bottom:5%;
+            text-align: center;
+            font-size: 5vmin;
+            font-weight: bold;
+            background:linear-gradient(to bottom,rgb(1, 1, 13),rgb(0, 9, 12));
+            display: grid;
+            color:white;
+            place-items: center;
+        }
+
+        @media only screen and (min-width:550px){
+            .show{
+            
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+            }
+            
+            .card{
+                width: 55vmin;
+                
+            }
+            .head{
+                font-size: 2.5vmin;
+                top:45%;
+                width: 90%;
+            }
+            .info{
+                font-size: 2vmin;
+                line-height: 2;
+                overflow: hidden;
+                width: 80%;
+            }
+            .price{
+                font-size: 3vmin;
+            }
+        }
